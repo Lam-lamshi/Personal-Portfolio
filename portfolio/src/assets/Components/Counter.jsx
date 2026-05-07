@@ -1,0 +1,46 @@
+import { useState, useEffect } from 'react'
+import './Counter.css'
+
+function AnimatedCounter({ target, label, duration = 2000 }) {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    let start = 0
+    const increment = target / (duration / 16) // 60fps
+
+    const timer = setInterval(() => {
+      start += increment
+      if (start >= target) {
+        setCount(target)
+        clearInterval(timer)
+      } else {
+        setCount(Math.floor(start))
+      }
+    }, 16)
+
+    return () => clearInterval(timer)
+  }, [target, duration])
+
+  return (
+    <div className="animated-counter">
+      <div className="counter-number">{count}+</div>
+      <div className="counter-label">{label}</div>
+    </div>
+  )
+}
+
+export default function Counter() {
+  return (
+    <section className="counters-section" id="stats">
+      <div className="counters-container">
+        <h2 className="counters-title">My Stats</h2>
+        <div className="counters-grid">
+          <AnimatedCounter target={5} label="Years Experience" />
+          <AnimatedCounter target={25} label="Projects Completed" />
+          <AnimatedCounter target={10} label="Technologies" />
+          <AnimatedCounter target={50} label="Happy Clients" />
+        </div>
+      </div>
+    </section>
+  )
+}

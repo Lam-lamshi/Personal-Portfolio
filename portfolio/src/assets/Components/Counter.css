@@ -1,0 +1,93 @@
+.counters-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+  position: relative;
+}
+
+.counters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.counters-title {
+  color: #e2e8f0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.counters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.animated-counter {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-counter:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.counter-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: countUp 2s ease-out;
+}
+
+.counter-label {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .counters-section {
+    padding: 3rem 1rem;
+  }
+
+  .counters-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .counters-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .animated-counter {
+    padding: 1.5rem;
+  }
+
+  .counter-number {
+    font-size: 2.5rem;
+  }
+}
