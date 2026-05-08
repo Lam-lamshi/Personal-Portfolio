@@ -10,22 +10,22 @@ export default function Hero(){
         <div className="hero">
             <div className="hero-text">
                 <h1>{user.name}</h1>
-                <img 
+                <p>{user.about}</p>
+                <div className="hero-buttons">
+                    <button className="hero-button hero-button-primary" onClick={() => { window.location.href = "#projects"; }}>
+                        View projects 
+                        <img src="/arrow.png"  className="hero-button-icon"/>
+                    </button>
+                    <button className="hero-button hero-button-secondary" onClick={() => { window.location.href = "#contact"; }}>
+                        Contact me   
+                    </button>
+                </div>
+            </div>
+            <img 
                 className="hero-image"
                 src={user.imageUrl}
                 alt="Hero Image"
             />
-                <p>{user.about}</p>
-            </div>
-            <div className="hero-buttons">
-                <button className="hero-button hero-button-primary" onClick={() => { window.location.href = "#projects"; }}>
-                    View projects 
-                    <img src="/arrow.png"  className="hero-button-icon"/>
-                </button>
-                <button className="hero-button hero-button-secondary" onClick={() => { window.location.href = "#contact"; }}>
-                    Contact me   
-                </button>
-            </div>
         </div>
     )
 }
