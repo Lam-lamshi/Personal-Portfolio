@@ -72,7 +72,7 @@ export default function Projects() {
           <div className="projects-visual">
             <div className="projects-right-content">
               <img
-                src="/icons8-github-logo.gif"
+                src="./icons8-github-logo.gif"
                 alt="GitHub Logo Animation"
                 className="projects-gif"
               />
