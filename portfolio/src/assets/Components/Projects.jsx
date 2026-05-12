@@ -7,7 +7,7 @@ const projectList = [
     description: 'A bakery website with a responsive menu, modern UI, and live ordering preview.',
     url: 'https://lam-lamshi.github.io/Cafe_Flour/',
     repo: 'https://github.com/Lam-lamshi/Cafe_Flour',
-    img: '/cafe-flour.mp4',
+    img: './cafe-flour.mp4',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projectList = [
     description: 'A React + Vite portfolio showcasing projects, skills, and contact links.',
     url: 'https://lam-lamshi.github.io/portfolio/',
     repo: 'https://github.com/Lam-lamshi/portfolio',
-    img: '/icons8-github-logo.gif',
+    img: './icons8-github-logo.gif',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const projectList = [
     description: 'A task tracker app with CRUD functionality, filters, and local storage support.',
     url: 'https://lam-lamshi.github.io/task-manager/',
     repo: 'https://github.com/Lam-lamshi/task-manager',
-    img: '/icons8-phone-100.png',
+    img: './icons8-phone-100.png',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const projectList = [
     description: 'A responsive weather dashboard with API forecasts, search, and location-based updates.',
     url: 'https://lam-lamshi.github.io/weather-dashboard/',
     repo: 'https://github.com/Lam-lamshi/weather-dashboard',
-    img: '/arrow.png',
+    img: './arrow.png',
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const projectList = [
     description: 'A recipe discovery app with ingredient search, filtering, and saved favorites.',
     url: 'https://lam-lamshi.github.io/recipe-finder/',
     repo: 'https://github.com/Lam-lamshi/recipe-finder',
-    img: '/icons8-github-logo.gif',
+    img: './icons8-github-logo.gif',
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const projectList = [
     description: 'A travel safety website with destination guidance, alerts, and trip planning resources.',
     url: 'https://lam-lamshi.github.io/Travel-safe/',
     repo: 'https://github.com/Lam-lamshi/Travel-safe',
-    img: '/icons8-phone-100.png',
+    img: './icons8-phone-100.png',
   },
 ]
 

@@ -17,7 +17,7 @@ export default function Navbar() {
         <a className="navbar-cta" href="#contact">
              <img
               className="navbar-contact-image"
-              src="/icons8-phone-100.png"
+              src="./icons8-phone-100.png"
               alt="Contact"
             />
         </a>
