@@ -1,7 +1,7 @@
 import './Hero.css'
 const user ={
     name: "Emmanuel Wisdom",
-    imageUrl:"./public/pic.jpeg",
+    imageUrl:"./pic.jpeg",
     about:"A Web Developer Passionate about turning ideas into reality  thrugh lines of codes ",
 }
 
