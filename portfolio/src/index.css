@@ -5,8 +5,9 @@ html, body, #root {
 }
 
 body {
-  background: radial-gradient(circle at top left, #5b6eff 0%, #0f172a 45%, #020617 100%);
+  background: radial-gradient(circle at top left, #0d2238 0%, #253355 45%, #3b3d44 100%);
   color: #e2e8f0;
+  scroll-behavior: smooth ;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 

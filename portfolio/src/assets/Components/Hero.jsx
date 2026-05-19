@@ -1,7 +1,7 @@
 import './Hero.css'
 const user ={
     name: "Emmanuel Wisdom",
-    imageUrl:"https://www.bing.com/th/id/OIP.XbhIGO49XCjhHxsWmFBtrAHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+    imageUrl:"./public/pic.jpeg",
     about:"A Web Developer Passionate about turning ideas into reality  thrugh lines of codes ",
 }
 

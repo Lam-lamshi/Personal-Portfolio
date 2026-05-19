@@ -27,6 +27,7 @@
     height: clamp(150px, 18vw, 220px);
     object-fit: cover;
     justify-self: center;
+    
 }
 
 .hero-buttons {

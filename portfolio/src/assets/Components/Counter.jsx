@@ -34,11 +34,14 @@ export default function Counter() {
     <section className="counters-section" id="stats">
       <div className="counters-container">
         <h2 className="counters-title">My Stats</h2>
+        <p> My approach combines creative design thinking with technical expertise 
+                        to deliver websites that not only look great but also perform exceptionally well across all devices.
+                        I believe every pixel matters and every interaction should feel intentional.</p>
         <div className="counters-grid">
           <AnimatedCounter target={5} label="Years Experience" />
-          <AnimatedCounter target={25} label="Projects Completed" />
+          <AnimatedCounter target={15} label="Projects Completed" />
           <AnimatedCounter target={10} label="Technologies" />
-          <AnimatedCounter target={50} label="Happy Clients" />
+          <AnimatedCounter target={20} label="Happy Clients" />
         </div>
       </div>
     </section>
