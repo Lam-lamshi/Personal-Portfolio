@@ -21,12 +21,9 @@
     color: white;
 }
 .skills-header span{
-    color: orange;
+    color: rgb(111, 111, 247);
 }
-.skills-header p {
-  color: #94a3b8;
-  line-height: 1.8;
-}
+
 .skill-icon {
   font-size: 2.6rem;
   color: white;
@@ -63,10 +60,10 @@
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 15px;
-    color: orange;
+    color: rgb(124, 112, 235);
 }
 
 .skill-box p{
     line-height: 1.7;
-    color: #64748b;
+    color: #e1e4e7;
 }

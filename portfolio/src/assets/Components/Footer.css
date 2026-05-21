@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 0;
+    background: #3e3e8b;
+    color: #e5e7eb;
+    text-align: center;
+    height: auto;
+}

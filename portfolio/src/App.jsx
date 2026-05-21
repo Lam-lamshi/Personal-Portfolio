@@ -4,6 +4,7 @@ import Counter from './assets/Components/Counter.jsx'
 import Projects from './assets/Components/Projects.jsx'
 import Colaboration from './assets/Components/Colaboration.jsx'
 import Skills from './assets/Components/Skills.jsx'
+import Footer from './assets/Components/Footer.jsx'
 function App() {
   return (
     <>
@@ -11,8 +12,9 @@ function App() {
       <Hero />
       <Counter />
       <Projects />
+        <Skills />
       <Colaboration />
-      <Skills />
+      <Footer />
     </>
   )
 }
