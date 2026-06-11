@@ -1,5 +1,6 @@
 import "./Projects.css";
 
+
 const projectList = [
   {
     id: 1,
@@ -9,6 +10,7 @@ const projectList = [
     url: "https://your-demo-link.com",
     repo: "https://github.com/yourusername/portfolio",
     icon: "fas fa-laptop-code",
+    img:"./portfolio.png",
   },
   {
     id: 2,
@@ -18,6 +20,7 @@ const projectList = [
     url: "https://lam-lamshi.github.io/Travel-safe/travel.html",
     repo: "https://github.com/lam-lamshi/Travel-safe",
     icon: "fas fa-globe",
+    img:"./travelWeb (1).png",
   },
   {
     id: 3,
@@ -27,15 +30,17 @@ const projectList = [
     url: "#",
     repo: "#",
     icon: "fas fa-shopping-cart",
+    img:"./Ecommerce.png",
   },
   {
     id: 4,
     title: "Business Landing Page",
     description:
       "A conversion-focused landing page built to increase engagement and generate leads.",
-    url: "#",
-    repo: "#",
-    icon: "fas fa-chart-line",
+    url: "https://lam-lamshi.github.io/Cafe_Flour/",
+    repo: "https://github.com/lam-lamshi/Cafe_Flour",
+    icon: "fas fa-coffee",
+    img:"./Cafe.png",
   },
   {
     id: 5,
@@ -45,6 +50,7 @@ const projectList = [
     url: "#",
     repo: "#",
     icon: "fas fa-database",
+    img:"./APi.png",
   },
   {
     id: 6,
@@ -54,20 +60,21 @@ const projectList = [
     url: "#",
     repo: "#",
     icon: "fas fa-mobile-alt",
+    img:"./Responsive.png",
   },
 ];
 
 export default function Projects() {
   return (
-    <section className="projects-section" id="projects">
+    <section className="projects-section" id="projects" data-aos="fade-up" data-aos-duration="1000">
       <div className="projects-container">
 
-        <div className="projects-header">
+        <div className="projects-header" data-aos="fade-left" data-aos-duration="1000">
           <h2>My Projects</h2>
           <p>Here are some of the projects I&apos;ve worked on.</p>
         </div>
 
-        <div className="projects-content">
+        <div className="projects-content" data-aos="fade-up" data-aos-duration="1000">
           <div className="projects-text">
             <h3>Check out my work</h3>
             <p>
@@ -96,15 +103,17 @@ export default function Projects() {
         </div>
 
         {/* PROJECT GRID */}
-        <div className="projects-grid">
-          {projectList.map((project) => (
-            <article key={project.id} className="project-card">
+          <div className="projects-grid">
+            {projectList.map((project, index) => (
+            <article key={project.id} className="project-card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay={index * 100}>
 
-              <div className="project-card-top">
+              <div className="project-card-top"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay={index * 100}>
                 <span className="project-card-badge">
                   Project {project.id}
                 </span>
-
+                    <div className="project-image">
+                    <img src={project.img} alt={project.title} />
+                  </div>
                 <div className="project-icon">
                   <i className={project.icon}></i>
                 </div>

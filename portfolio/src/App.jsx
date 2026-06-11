@@ -5,10 +5,23 @@ import Projects from './assets/Components/Projects.jsx'
 import Colaboration from './assets/Components/Colaboration.jsx'
 import Skills from './assets/Components/Skills.jsx'
 import Footer from './assets/Components/Footer.jsx'
+import Splash from './assets/Components/Splash.jsx'
+import { useState, useEffect } from 'react';
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
+  if (loading) {
+    return <Splash />;
+  }
   return (
     <>
-      <Navbar />
+      <Navbar />  
       <Hero />
       <Counter />
       <Projects />

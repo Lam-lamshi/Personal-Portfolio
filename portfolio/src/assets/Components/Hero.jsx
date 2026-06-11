@@ -2,11 +2,13 @@ import './Hero.css'
 const user ={
     name: "Emmanuel Wisdom",
     imageUrl:"./pic.jpeg",
-    about:"A Web Developer Passionate about turning ideas into reality  thrugh lines of codes ",
+    about:"Frontend Web Developer & Computer Engineering Student, I build responsive, modern, and user-friendly websites. ",
+    nextimageUrl:"./next.png",
 }
 
 export default function Hero(){
     return(
+        
         <div className="hero">
             <div className="hero-text">
                 <h1>{user.name}</h1>
@@ -14,7 +16,7 @@ export default function Hero(){
                 <div className="hero-buttons">
                     <button className="hero-button hero-button-primary" onClick={() => { window.location.href = "#projects"; }}>
                         View projects 
-                        <i className="fa-light fa-angles-right "  className="hero-button-icon"/>
+                        <img src={user.nextimageUrl} alt="Next" className="hero-button-icon"/>
                     </button>
                     <button className="hero-button hero-button-secondary" onClick={() => { window.location.href = "#contact"; }}>
                         Contact me   

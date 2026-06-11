@@ -22,7 +22,7 @@ function AnimatedCounter({ target, label, duration = 2000 }) {
   }, [target, duration])
 
   return (
-    <div className="animated-counter">
+    <div className="animated-counter" data-aos="flip-down" data-aos-duration="1000">
       <div className="counter-number">{count}+</div>
       <div className="counter-label">{label}</div>
     </div>
@@ -31,7 +31,7 @@ function AnimatedCounter({ target, label, duration = 2000 }) {
 
 export default function Counter() {
   return (
-    <section className="counters-section" id="stats">
+    <section className="counters-section" id="stats" data-aos= "fade-up" data-aos-duration="1000">
       <div className="counters-container">
         <h2 className="counters-title">My Stats</h2>
         <p> My approach combines creative design thinking with technical expertise 

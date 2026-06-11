@@ -11,13 +11,13 @@ export default function Navbar() {
         <nav className="navbar-links">
           <a href="#about">About</a>
           <a href="#stats">Stats</a>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Projects</a>``
         </nav>
 
-        <a className="navbar-cta" href="#contact">
+        <a className="navbar-cta" href="https://wa.me/2349085306102" target="_blank" rel="noopener noreferrer">
              <img
-              className="navbar-contact-image"
-              src="./icons8-phone-100.png"
+              className="navbar-contact-image fas fa-bounce"
+              src="./contact.png"
               alt="Contact"
             />
         </a>

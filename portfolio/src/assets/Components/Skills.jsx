@@ -11,7 +11,7 @@ export default function Skills(){
   }, []);
     return(
         <div>
-        <section id="skills">
+        <section id="skills" data-aos="zoom-in-down" data-aos-duration="1000">
     <div className="skills-wrapper">
         <div className="skills-header">
            

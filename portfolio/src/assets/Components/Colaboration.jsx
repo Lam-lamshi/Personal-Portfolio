@@ -33,14 +33,14 @@ export default function Collaboration() {
   };
 
   return (
-    <div className="collab">
+    <div className="collab" data-aos="fade-up" data-aos-duration="1000">
       <h2>Let's work together!</h2>
 
-      <section id="contact">
+      <section id="contact" data-aos="fade-down-left" data-aos-duration="1000">
         <div className="contact-wrapper">
 
           {/* LEFT SIDE */}
-          <div className="contact-info">
+          <div className="contact-info" data-aos="fade-right" data-aos-duration="1000">
             <h2>Contact Information</h2>
             <span>
               We’re here to help you plan the perfect adventure.
@@ -48,7 +48,7 @@ export default function Collaboration() {
             </span>
 
             <div className="info-block">
-              <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Icon" />
+              <img src="./support.png" alt="Phone Icon" />
               <div>
                 <strong>Phone</strong>
                 <span>+234 902 561 8500</span>
@@ -70,18 +70,11 @@ export default function Collaboration() {
               <div>
                 <strong>Office</strong>
                 <span>Abuja, Nigeria</span>
-                <span>Not available in person for consultations</span>
+                <span>Available for virtual consultations</span>
               </div>
             </div>
 
-            <div className="info-block">
-              <img src="https://cdn-icons-png.flaticon.com/512/3771/3771214.png" alt="Language Icon" />
-              <div>
-                <strong>Languages</strong>
-                <span>English, French, Swahili</span>
-                <span>Multilingual support available</span>
-              </div>
-            </div>
+           
 
             <div className="footer-social">
               <p>Connect with us</p>
@@ -98,7 +91,7 @@ export default function Collaboration() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="contact-form">
+          <div className="contact-form" data-aos="fade-left" data-aos-duration="1000">
             <h2>Send us a Message</h2>
             <p>
               Tell us about your Website idea and we’ll help make it a reality.

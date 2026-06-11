@@ -1,14 +1,15 @@
 .hero {
     width: min(100%, 920px);
+    min-height: 100vh;
     max-width: 100%;
     margin: 0 auto;
     padding: 3rem 1rem;
-    min-height: 75vh;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     gap: 2rem;
+    
 }
 
 .hero-text {
@@ -19,6 +20,15 @@
     gap: 1rem;
     max-width: 640px;
     margin: 0 auto;
+     font-size: clamp(2.5rem, vw, 4.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #ffffff, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
 .hero-image {
@@ -27,6 +37,7 @@
     height: clamp(150px, 18vw, 220px);
     object-fit: cover;
     justify-self: center;
+    object-position: 60% top;
     
 }
 
@@ -64,12 +75,15 @@
 }
 
 .hero-button-primary {
-    background: #2563eb;
+    background: transparent;
     color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-button-primary:hover {
-    background: #1d4ed8;
+    background: transparent;
+    color: #60a5fa;
+    border-color: rgba(255, 255, 255, 0.4);
     transform: translateY(-2px);
 }
 
