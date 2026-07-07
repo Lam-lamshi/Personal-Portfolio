@@ -51,7 +51,7 @@ export default function Collaboration() {
               <img src="./support.png" alt="Phone Icon" />
               <div>
                 <strong>Phone</strong>
-                <span>+234 902 561 8500</span>
+                <span>+234 707 659 2988</span>
                 <span>Mon–Fri 9AM–6PM WAT</span>
               </div>
             </div>

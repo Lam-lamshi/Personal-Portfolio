@@ -16,7 +16,7 @@ export default function Hero(){
                 <div className="hero-buttons">
                     <button className="hero-button hero-button-primary" onClick={() => { window.location.href = "#projects"; }}>
                         View projects 
-                        <img src={user.nextimageUrl} alt="Next" className="hero-button-icon"/>
+                        <img src={user.nextimageUrl} alt="Next" className="hero-button-icon" />
                     </button>
                     <button className="hero-button hero-button-secondary" onClick={() => { window.location.href = "#contact"; }}>
                         Contact me   

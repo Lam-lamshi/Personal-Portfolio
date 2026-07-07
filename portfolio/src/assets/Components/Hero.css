@@ -27,7 +27,6 @@
   line-height: 1.1;
   background: linear-gradient(90deg, #ffffff, #60a5fa, #a78bfa);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
@@ -73,6 +72,26 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 0.2rem;
 }
+@keyframes pulseArrow {
+    0%,
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(4px) scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+.hero-button-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+
+    animation: pulseArrow 2s ease-in-out infinite;
+}
 
 .hero-button-primary {
     background: transparent;
@@ -82,19 +101,22 @@
 
 .hero-button-primary:hover {
     background: transparent;
-    color: #60a5fa;
-    border-color: rgba(255, 255, 255, 0.4);
-    transform: translateY(-2px);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.836);
+    transform: translateY(-10px);
 }
 
 .hero-button-secondary {
     background: rgba(228, 244, 252, 0.08);
     color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-button-secondary:hover {
-    background: rgba(15, 23, 42, 0.16);
-    transform: translateY(-2px);
+    background: rgba(155, 155, 156, 0.16);
+    transform: translateY(-10px);
+     border-color: rgba(255, 255, 255, 0.836);
+  
 }
 
 @media (min-width: 900px) {
