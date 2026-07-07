@@ -12,13 +12,19 @@ body {
     padding: 0;
 }
 
-.navbar-wrapper {
-  position: sticky;
-  top: 15px;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  padding: 0 1rem;
+
+ .navbar-wrapper {
+    position: fixed;
+    top: 15px;
+    left: 25%;
+    width: 50%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0 1rem;
+    pointer-events: none;
 }
 
 .navbar-container {
@@ -131,6 +137,10 @@ body {
 
         top:14px;
         padding:0.5rem;
+        width: 100%;
+        left: 0%;
+        position: sticky;
+        
     }
 
     .navbar-container{
