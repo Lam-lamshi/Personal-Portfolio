@@ -17,7 +17,7 @@ const projectList = [
     title: "Travel Booking Platform",
     description:
       "A responsive travel website with destination filtering, reviews, and booking links.",
-    url: "https://lam-lamshi.github.io/Travel-safe/travel.html",
+    url: "https://travelingsafe.netlify.app/",
     repo: "https://github.com/lam-lamshi/Travel-safe",
     icon: "fas fa-globe",
     img:"./travelWeb (1).png",
